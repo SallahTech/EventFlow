@@ -88,4 +88,11 @@ Once the application is up and running, you can access the frontend at http://lo
 at http://localhost:3001.
 
 ## Microservices
+EventFlow is composed of several microservices, each responsible for a specific domain within the system:
 
+User Service: Manages user registration, authentication, and profiles.
+Event Service: Handles event creation, updates, and deletions.
+Booking Service: Manages event bookings and related notifications.
+Notification Service: Sends email and SMS notifications for bookings and reminders.
+Admin Service: Provides tools for event organizers to manage their events and view statistics.
+Each microservice communicates through a message broker (RabbitMQ) and uses Redis for caching and session management.
